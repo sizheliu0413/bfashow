@@ -14,11 +14,12 @@
       <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" shadow></a-cylinder>
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
 -->
-  <a-assets>
-    <a-asset-item id="object" src="assets/face1.gltf"></a-asset-item>
-  </a-assets>
-
-  <a-entity gltf-model="#object"></a-entity>
+        <a-entity light="angle: 60.11"></a-entity>
+        <a-assets>
+      <a-asset-item id="object" src="assets/face1.obj"></a-asset-item>
+      <a-asset-item id="material" src="assets/face1.mtl"></a-asset-item>
+        </a-assets>
+        <a-obj-model obj="#object" mtl="#material" scale="1 1 1"></a-obj-model>
     </a-scene>
       
   </body>
